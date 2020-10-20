@@ -8,7 +8,7 @@ var verifyToken = require('./middleware/verifyToken.js');
 
 var exec = require('child_process').exec;
 
-var serviceAccount = require(__dirname + '/.data/serviceAccountKey.json');
+var serviceAccount = require('./serviceAccountKey.json');
 
 firebase.initializeApp({
 	credential: firebase.credential.cert(serviceAccount),
