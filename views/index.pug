@@ -1,0 +1,49 @@
+extends layout
+
+block script
+  script(src='/js/mainmenu.js')
+
+block content
+  div.header.w3-center
+    h1 #[span Tiwar]Clone
+    
+  div.content
+    div.w3-grey.w3-container(style='height: 12rem')
+    
+    div.w3-container.center
+      h2.w3-text-white.big Selamat datang pejuang tangguh
+      p Game legendaris tiruan #[span Tiwar] tentunya dengan fitur baru dan pastinya gak pay2win kek game original nya
+    
+      h4.secondary Sudah ada #[span 0] Pemain lho!!
+      
+    div.w3-container.center.w3-margin-bottom
+      a(href='#').w3-button.w3-blue.medium #[p DAFTAR SEKARANG JUGA]
+      span.block.small.w3-padding-small Tidak perlu #[span.w3-text-blue mengunduh]
+    
+    div.center.w3-margin-bottom.centerx(style='width: 60%')
+      div.w3-container.w3-lime.w3-padding-small #[span Menu Login]
+      div.w3-container.box-bg
+        p#status.w3-text-red.w3-padding-small.small(style='display:none')
+        
+        form#login(action='#')
+          input#email.w3-input(type='email', name='email', placeholder='Email kece kamu')
+          input#password.w3-input(type='password', name='password', placeholder='Password')
+          input.w3-text-white.w3-button.w3-lime(type='submit', value='Masuk Pak Eko')
+        
+        a.w3-text-white.w3-padding-small.small(href='#') Saya lupa password
+          
+    div.w3-container.center.w3-margin-bottom.bg-bg
+      p Login dengan akun #[span.w3-blue-text Social Media]
+      
+      div.w3-margin-bottom
+        a.w3-padding(href='#') #[img(src='/icon/social/facebook.png')]
+        a.w3-padding(href='#') #[img(src='/icon/social/twitter.png')]
+        a.w3-padding(href='#') #[img(src='/icon/social/google.png')]
+      
+    div.w3-row-padding.center.w3-margin-bottom.w3-margin-top
+      div.w3-col.s4.m4.l4
+        a.w3-button.box-bg(href='#') #[img(src='/icon/rpg/I_Scroll.png')] #[span.block.w3-text-white News]
+      div.w3-col.s4.m4.l4
+        a.w3-button.box-bg(href='#') #[img(src='/icon/rpg/I_Book.png')] #[span.block.w3-text-white Guide]
+      div.w3-col.s4.m4.l4
+        a.w3-button.box-bg(href='#') #[img(src='/icon/rpg/I_Scroll02.png')] #[span.block.w3-text-white About]

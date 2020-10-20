@@ -1,0 +1,98 @@
+/**
+Created by Ferdian IA
+**/
+
+/** Font Size **/
+span {
+	color: $white !important;
+	font-weight: bold;
+}
+
+.big {
+	font-size: 1.5rem;
+}
+
+.medium {
+	font-size: 1.2rem;
+}
+
+.small {
+	font-size: 0.8rem;
+}
+
+.block {
+	display: block;
+}
+
+/** Main Setup **/
+
+body {
+	font-family: Ubuntu;
+    background-color: lighten($bg, 5%);
+    color: $text;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+a, .link {
+    color: $main;
+    font-weight: bold;
+    text-decoration: none;
+    @include transition(color 200ms, background-color 200ms);
+    &:hover, &:focus, &:active {
+    	text-decoration: underline;
+        color: $white !important;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $main;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+	border: none;
+	margin: 1rem 0;
+	width: 100%;
+	&[type='submit'] {font-weight: bold}
+}
+
+.centerx {margin: 0 auto}
+.center {text-align: center}
+
+/** Content **/
+.content {
+	flex: 1;
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+/** Header **/
+.header { 
+    background-color: $bg;
+    padding: 1.8rem ;
+    border-bottom: 0.4rem solid $main;
+    h1 {
+    	color: $main;
+		font-size: 2.5rem;
+		line-height: 1.4rem;
+		letter-spacing: -0.2rem;
+	    text-transform: uppercase;
+	}
+}
+
+.footer { 
+    background-color: $bg;
+    padding: 0.8rem ;
+    border-top: 0.4rem solid $main;
+    a, p, span {color: $text !important}
+    a {text-decoration: underline}
+}
+
+/** EXP Bar **/
+.exp {
+	background-color: $main;
+	height: 0.2rem;
+}

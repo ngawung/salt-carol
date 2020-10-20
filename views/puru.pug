@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  if !id && !page && !type
+    form(method='GET')
+      label ID:
+      input.w3-margin-bottom.w3-margin-left(type='text', name='id')
+      br
+      
+      label page:
+      input.w3-margin-bottom.w3-margin-left(type='text', name='page', value='1')
+      br
+      
+      select.w3-margin-bottom(name='type')
+        option(value='jpg') JPG
+        option(value='png') PNG
+      br
+      
+      input(type='submit', value='Load')
+      
+  else
+    div.center.w3-container.w3-margin-bottom
+      label ID: #{id} | Page: #{page} | 
+        a(href='/puru') Home
+    div.w3-container
+      a(href=`/puru?id=${id}&page=` + (parseInt(page) + 1) + `&type=${type}`)
+        img.w3-image(src=`https://api.pururin.io/images/${id}/${page}.${type}`)

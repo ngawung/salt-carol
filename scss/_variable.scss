@@ -1,0 +1,19 @@
+/**
+Created by Ferdian IA
+**/
+
+/** Colors **/
+$bg:      	  #222222 !default;
+$text:   	   #8c8c8c !default;
+$main:		  #ff9a00 !default;
+
+$white:		 #ffffff !default;
+$black:		 #000000 !default;
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

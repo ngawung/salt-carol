@@ -1,0 +1,149 @@
+/**
+Created by Ferdian IA
+**/
+/** Colors **/
+/**
+Created by Ferdian IA
+**/
+/** Text Color **/
+.bg {
+  color: #222222 !important;
+}
+
+.text {
+  color: #8c8c8c !important;
+}
+
+.main {
+  color: #ff9a00 !important;
+}
+
+/** Background Color **/
+.bg-bg, .bg-bg-hover:hover {
+  color: #ffffff !important;
+  background-color: #222222 !important;
+}
+
+.box-bg, .box-bg-hover:hover {
+  color: #ffffff !important;
+  background-color: #484848 !important;
+}
+
+.main-bg, .main-bg-hover:hover {
+  color: #000000 !important;
+  background-color: #ff9a00 !important;
+}
+
+/**
+Created by Ferdian IA
+**/
+/** Font Size **/
+span {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.big {
+  font-size: 1.5rem;
+}
+
+.medium {
+  font-size: 1.2rem;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.block {
+  display: block;
+}
+
+/** Main Setup **/
+body {
+  font-family: Ubuntu;
+  background-color: #2f2f2f;
+  color: #8c8c8c;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+a, .link {
+  color: #ff9a00;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: color 200ms, background-color 200ms;
+  -moz-transition: color 200ms, background-color 200ms;
+  -ms-transition: color 200ms, background-color 200ms;
+  -o-transition: color 200ms, background-color 200ms;
+  transition: color 200ms, background-color 200ms;
+}
+a:hover, a:focus, a:active, .link:hover, .link:focus, .link:active {
+  text-decoration: underline;
+  color: #ffffff !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #ff9a00;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  margin: 1rem 0;
+  width: 100%;
+}
+input[type=submit] {
+  font-weight: bold;
+}
+
+.centerx {
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+/** Content **/
+.content {
+  flex: 1;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/** Header **/
+.header {
+  background-color: #222222;
+  padding: 1.8rem;
+  border-bottom: 0.4rem solid #ff9a00;
+}
+.header h1 {
+  color: #ff9a00;
+  font-size: 2.5rem;
+  line-height: 1.4rem;
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #222222;
+  padding: 0.8rem;
+  border-top: 0.4rem solid #ff9a00;
+}
+.footer a, .footer p, .footer span {
+  color: #8c8c8c !important;
+}
+.footer a {
+  text-decoration: underline;
+}
+
+/** EXP Bar **/
+.exp {
+  background-color: #ff9a00;
+  height: 0.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
