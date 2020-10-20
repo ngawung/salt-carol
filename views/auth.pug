@@ -1,0 +1,21 @@
+extends layout
+
+block script
+  script(src='js/firebase/auth.js')
+
+block content
+  h1 Authentication Tester v2
+  label.status.w3-text-red
+  br
+  
+  label Email 
+  input.username.w3-margin-bottom.w3-margin-left(type='email', name='email')
+  br
+    
+  label Password :
+  input.password.w3-margin-bottom.w3-margin-left(type='password', name='pass')
+  br
+    
+  button.register(type='button') Register
+  button.login(type='button') Login
+  button.logout(type='button') Logout

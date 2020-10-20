@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    
+    include ../include/meta
+    
+    // Theme
+    include ../include/css
+    
+    // Firebase
+    include ../include/firebase
+    
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='/js/main.js')
+    
+    block script
+    
+  body
+    block content
+    
+    block footer
+    
+    div.w3-container.center.footer
+      div #[a(href='#') Agreement]
+      div #[span © 2018 Ferdian IA] #[span.small +12] 
+    
+      div.w3-margin-top #[p v0.9 Testing]

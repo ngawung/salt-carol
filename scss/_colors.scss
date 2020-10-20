@@ -1,0 +1,15 @@
+/**
+Created by Ferdian IA
+**/
+
+/** Text Color **/
+.bg {color: $bg !important}
+.text {color: $text !important}
+.main {color: $main !important}
+
+/** Background Color **/
+
+.bg-bg, .bg-bg-hover:hover {color:$white !important; background-color:$bg !important}
+.box-bg, .box-bg-hover:hover {color:$white !important; background-color:lighten($bg, 15%) !important}
+.main-bg, .main-bg-hover:hover {color:$black !important; background-color:$main !important}
+
